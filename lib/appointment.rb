@@ -24,6 +24,8 @@
 #
 # end
 require 'pry'
+require_relative "patient.rb"
+require_relative "doctor.rb"
 
 class Appointment
   attr_accessor :date, :doctor, :patient
@@ -41,5 +43,10 @@ class Appointment
   def doctor
     @doctor
   end
-  binding.pry
+
 end
+
+doctor_who = Doctor.new("The Doctor")
+appointment = Appointment.new("Friday, January 32nd", doctor_who)
+
+binding.pry
