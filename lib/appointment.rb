@@ -34,7 +34,7 @@ class Appointment
   end
 
   def patient
-    @patient = patient
+    @patient
   end
 
   def doctor
