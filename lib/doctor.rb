@@ -21,24 +21,24 @@
 #
 # end
 
-class Artist
+class Doctor
   attr_accessor :name
 
   def initialize(name)
     @name = name
-    @songs = []
+    @appointments = []
   end
 
-  def add_song(song)
-    @songs << song
-    song.artist = self
+  def add_appointment(appointment)
+    @appointments << appointment
+    appointment.doctor = self
   end
 
-  def songs
-    @songs
+  def appointments
+    @appointments
   end
 
-  def genres
-    self.songs.collect {|song_objects| song_objects.genre }
+  def patients
+    self.appointments.collect {|app_objects| app_objects.patient}
   end
 end
