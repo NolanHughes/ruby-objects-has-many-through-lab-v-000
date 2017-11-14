@@ -1,25 +1,44 @@
-class Appointment
-  attr_accessor :date, :doctor, :patient
+# class Appointment
+#   attr_accessor :date, :doctor, :patient
+# 
+#   def initialize(date, doctor)
+#     @date = date
+#     @doctor = doctor
+#     @appointments = []
+# 
+#   end
+# 
+#   def add_appointment(appointment)
+#     @appointments << appointment
+#     self.patient
+#   end
+# 
+#   def patient
+#     @patient
+#   end
+# 
+#   def doctor
+#     @doctor = doctor
+#     doctor.add_appointment(self)
+#   end
+# 
+# end
 
-  def initialize(date, doctor)
-    @date = date
-    @doctor = doctor
-    @appointments = []
+class Song
+  attr_accessor :name, :genre, :artist
 
+  def initialize(name, genre)
+    @name = name
+    @genre = genre
+    genre.add_song(self)
+    # @artist = artist
   end
 
-  def add_appointment(appointment)
-    @appointments << appointment
-    self.patient
+  def genre
+    @genre
   end
 
-  def patient
-    @patient
+  def artist
+    @artist
   end
-
-  def doctor
-    @doctor = doctor
-    doctor.add_appointment(self)
-  end
-
 end
