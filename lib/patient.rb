@@ -37,6 +37,6 @@ class Patient
   end
 
   def doctors
-    self.appointments.collect { |app_objects| app_objects.doctors }
+    self.appointments.collect { |app_objects| app_objects.doctor }
   end
 end
