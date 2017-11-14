@@ -5,12 +5,12 @@ class Appointment
     @date = date
     @doctor = doctor
     @appointments = []
-
+    doctor.add_appointment(self)
   end
 
   def add_appointment(appointment)
     @appointments << appointment
-    doctor.add_appointment(self)
+    
   end
 
   def patient
