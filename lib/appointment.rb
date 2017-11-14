@@ -23,6 +23,7 @@
 #   end
 #
 # end
+require 'pry'
 
 class Appointment
   attr_accessor :date, :doctor, :patient
@@ -40,4 +41,5 @@ class Appointment
   def doctor
     @doctor
   end
+  binding.pry
 end
