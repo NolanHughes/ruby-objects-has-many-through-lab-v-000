@@ -25,12 +25,12 @@
 # end
 
 class Appointment
-  attr_accessor :date, :doctor
+  attr_accessor :date, :doctor, :patient
 
   def initialize(date, doctor)
     @doctor = doctor
     @date = date
-    genre.add_song(self)
+    patient.add_song(self)
   end
 
   def genre
