@@ -33,11 +33,11 @@ class Appointment
     patient.add_song(self)
   end
 
-  def genre
-    @genre
+  def patient
+    @patient
   end
 
-  def artist
-    @artist
+  def doctor
+    @doctor
   end
 end
