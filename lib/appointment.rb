@@ -24,12 +24,12 @@
 #
 # end
 
-class Song
-  attr_accessor :name, :genre, :artist
+class Appointment
+  attr_accessor :date, :doctor
 
-  def initialize(name, genre)
-    @name = name
-    @genre = genre
+  def initialize(date, doctor)
+    @doctor = doctor
+    @date = date
     genre.add_song(self)
     # @artist = artist
   end
