@@ -1,6 +1,6 @@
-require 'pry'
-require_relative 'appointment.rb'
-require_relative 'patient.rb'
+# require 'pry'
+# require_relative 'appointment.rb'
+# require_relative 'patient.rb'
 
 class Doctor
   attr_accessor :name, :appointments, :patient
@@ -26,7 +26,7 @@ class Doctor
 end
 
 
-doctor_who = Doctor.new("The Doctor")
-appointment = Appointment.new("Friday, January 32nd", doctor_who)
-martin = Patient.new("Martin Jones")
-binding.pry
+# doctor_who = Doctor.new("The Doctor")
+# appointment = Appointment.new("Friday, January 32nd", doctor_who)
+# martin = Patient.new("Martin Jones")
+# binding.pry
