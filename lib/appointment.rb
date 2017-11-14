@@ -13,9 +13,9 @@ class Appointment
     doctor.add_appointment(self)
   end
 
-  # def patient
-  #   self.patient
-  # end
+  def patient
+    self.patient
+  end
 
   def doctor
     @doctor
