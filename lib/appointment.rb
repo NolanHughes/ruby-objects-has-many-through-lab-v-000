@@ -31,7 +31,6 @@ class Appointment
     @doctor = doctor
     @date = date
     genre.add_song(self)
-    # @artist = artist
   end
 
   def genre
