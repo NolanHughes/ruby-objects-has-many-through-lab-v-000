@@ -33,7 +33,7 @@ class Appointment
     # patient.add_appointment(self)
   end
 
-  def patient(patient)
+  def patient
     @patient = patient
   end
 
